@@ -1,0 +1,50 @@
+
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<div id="container">
+    <aside>
+        <a href="#">오늘의 뉴스</a>
+        <a href="#">인기 글</a>
+        <a href="#">질병 정보</a>
+        <a href="#">개</a>
+        <a href="#">고양이</a>
+    </aside>
+    <main>
+        <button type="button">글 추가하기</button>
+        <div>
+            <article>
+                <h3>제목</h3>
+                <img src="{% static 'dog1.jpg' %}">
+                <div>
+                    내용들
+                </div>
+            </article>
+            <article>
+                <h3>제목</h3>
+                <img src="{% static 'dog1.jpg' %}">
+                <div>
+                    내용들
+                </div>
+            </article>
+        </div>
+        <div>
+            <article>
+                <h3>제목</h3>
+                <img src="{% static 'dog1.jpg' %}">
+                <div>
+                    내용들
+                </div>
+            </article>
+            <article>
+                <h3>제목</h3>
+                <img src="{% static 'dog1.jpg' %}">
+                <div>
+                    내용들
+                </div>
+            </article>
+        </div>
+    </main>
+</div>
+
+{% endblock %}
