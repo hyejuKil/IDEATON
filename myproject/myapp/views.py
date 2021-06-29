@@ -4,8 +4,8 @@ from django.shortcuts import render
 def home(request):
     return render(request,'home.html')
 
-def chat(request):
-    return render(request,'chat.html')
+def chat_search(request):
+    return render(request,'chat_search.html')
 
 def hreview(request):
     return render(request,'hospital_review.html')
